@@ -159,7 +159,7 @@ header > .-phone > a > img {
 
 #nsec2 {
 	position: relative;
-	background: url(res/img12-3-1.png), url(res/white.png);
+	background: url(res/img12-3-2.png), url(res/white.png);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
 	background-position: 70% 50%, 50% 50%;
@@ -201,7 +201,7 @@ header > .-phone > a > img {
 	background: url(res/img13.png), url(res/white.png);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
-	background-position: 30% 50%, 50% 50%;
+	background-position: 35% 50%, 50% 50%;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -541,7 +541,7 @@ h2 {
 	}
 
 	#nsec3 {
-		background-position: 30% -100px, 50% 50%;
+		background-position: 35% -50px, 50% 50%;
 	}
 }
 
@@ -603,7 +603,7 @@ h2 {
 	}
 
 	#nsec3 {
-		background-position: 30% 50px, 50% 50%;
+		background-position: 35% 100px, 50% 50%;
 	}
 
 	#nsec2 > .-content {
@@ -648,7 +648,7 @@ h2 {
 
 	#nsec3 {
 		min-height: 450px;
-		background-position: 30% 0, 50% 50%;
+		background-position: 35% 25px, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content {
