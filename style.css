@@ -172,19 +172,19 @@ header > .-phone > a > img {
 	position: absolute;
 	bottom: 1.25em;
 	margin-left: -3em;
-	padding: .5em 1.75em 1.5em 4.25em;
+	padding: .5em 1em 1.5em 4.25em;
 	max-width: 450px;
-	background: rgba(65, 65, 65, .5);
+	background: rgba(20, 20, 20, .5);
 	color: white;
 	border: solid #0000;
 	border-width: 2px 2px 0 0;
 	border-radius: 0 5px 5px 0;
-	text-align: left;
+	text-align: justify;
 	font-size: 1.38em;
 	transform: skewX(-10deg);
 }
 
-#nsec2 > .-content > p {
+#nsec2 > .-content > p > span {
 	transform: skewX(10deg);
 }
 
@@ -224,19 +224,19 @@ header > .-phone > a > img {
 	bottom: 1.25em;
 	right: 0;
 	margin-right: -3em;
-	padding: .5em 4.25em 1.5em 1.75em;
+	padding: .5em 4.25em 1.5em 1em;
 	max-width: 450px;
-	background: rgba(65, 65, 65, .5);
+	background: rgba(20, 20, 20, .5);
 	color: white;
 	border: solid #0000;
 	border-width: 2px 0 0 2px;
 	border-radius: 5px 0 0 5px;
-	text-align: left;
+	text-align: justify;
 	font-size: 1.38em;
 	transform: skewX(10deg);
 }
 
-#nsec3 > .-content > p {
+#nsec3 > .-content > p > span {
 	transform: skewX(-10deg);
 }
 
@@ -288,19 +288,19 @@ header > .-phone > a > img {
 	position: absolute;
 	bottom: 1.25em;
 	margin-left: -3em;
-	padding: .5em 1.75em 1.5em 4.25em;
+	padding: .5em 1em 1.5em 4.25em;
 	max-width: 450px;
-	background: rgba(65, 65, 65, .5);
+	background: rgba(20, 20, 20, .5);
 	color: white;
 	border: solid #0000;
 	border-width: 2px 2px 0 0;
 	border-radius: 0 5px 5px 0;
-	text-align: left;
+	text-align: justify;
 	font-size: 1.38em;
 	transform: skewX(-10deg);
 }
 
-#nsec4 > .-content > p {
+#nsec4 > .-content > p > span {
 	transform: skewX(10deg);
 }
 
@@ -332,19 +332,19 @@ header > .-phone > a > img {
 	bottom: 1.25em;
 	right: 0;
 	margin-right: -3em;
-	padding: .5em 4.25em 1.5em 1.75em;
+	padding: .5em 4.25em 1.5em 1em;
 	max-width: 450px;
-	background: rgba(65, 65, 65, .5);
+	background: rgba(20, 20, 20, .5);
 	color: white;
 	border: solid #0000;
 	border-width: 2px 0 0 2px;
 	border-radius: 5px 0 0 5px;
-	text-align: left;
+	text-align: justify;
 	font-size: 1.38em;
 	transform: skewX(10deg);
 }
 
-#nsec5 > .-content > p {
+#nsec5 > .-content > p > span {
 	transform: skewX(-10deg);
 }
 

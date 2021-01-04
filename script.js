@@ -32,5 +32,7 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 
 	document.getElementById('nsecrev').addEventListener("scroll", function () {
 		document.getElementById('nsecrev').classList.add("-nosel");
-	})
+	});
+
+	document.querySelectorAll(".domi-spanify").forEach(el1 => el1.innerHTML = el1.innerHTML.split(" ").map(el2 => "<span style='display: inline-block;'>" + el2 + "</span>").join(" "));
 });
