@@ -658,6 +658,15 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
+	#nsec1 {
+		min-height: 400px;
+	}
+
+	#nsec1 > .-content > .-c1 {
+		top: 0;
+		transform: unset;
+	}
+
 	#nsec1 > .-content > .-c2 > .-jobs {
 		font-size: .75em;
 	}
