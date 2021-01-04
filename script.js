@@ -40,10 +40,11 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		//document.querySelector('#nsecrev > .-reviews').scrollX += 10;
 		if(isInViewport(document.querySelector('#nsecrev > .-reviews'))) {
 			clearInterval(vp);
-			$('#nsecrev > .-reviews').animate({
-				scrollLeft: 2000//$('#nsecrev > .-reviews').offset().right
-			}, 50000, "linear");
-			console.log("!");
+			setTimeout(function () {
+				$('#nsecrev > .-reviews').animate({
+					scrollLeft: 2000//$('#nsecrev > .-reviews').offset().right
+				}, 50000, "linear");
+			}, 1000);
 		}
 	}, 100);
 });
