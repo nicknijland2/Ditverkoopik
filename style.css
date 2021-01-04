@@ -49,6 +49,15 @@ header > .-laptop > ul > li {
 	padding-left: 1em;
 }
 
+header > .-laptop > ul > li > a {
+	color: unset;
+	text-decoration: none;
+}
+
+header > .-laptop > ul > li > a:hover {
+	text-decoration: underline;
+}
+
 header > .-phone {
 	position: absolute;
 	pointer-events: none;
