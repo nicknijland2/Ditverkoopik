@@ -87,7 +87,7 @@ header > .-phone > a > img {
 }
 
 #nsec1 {
-	font-size: 1.5em;
+	font-size: 2em;
 	position: relative;
 	background: url(res/img1.jpg);
 	background-size: cover;
@@ -110,7 +110,7 @@ header > .-phone > a > img {
 #nsec1 > .-content > .-c1 {
 	position: absolute;
 	top: 50%;
-	left: 5em;
+	left: 3em;
 	transform: translateY(-75%);
 	text-align: left;
 	width: calc(100% - 2em);
@@ -201,7 +201,7 @@ header > .-phone > a > img {
 	background: url(res/img13.png), url(res/white.png);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
-	background-position: 35% 50%, 50% 50%;
+	background-position: 45% 50%, 50% 50%;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -245,7 +245,7 @@ header > .-phone > a > img {
 	transform: rotate(7deg);
 	height: 20em;
 	bottom: 3em;
-	left: calc(50% - 32em);
+	left: calc(50% - 27em);
 }
 
 #nsec4 {
@@ -310,25 +310,34 @@ header > .-phone > a > img {
 
 #nsec5 {
 	position: relative;
-	background: url(res/img11.png), url(res/white.png);
+	background: url(res/img14.png), url(res/white.png);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
-	background-position: 50% 50%, 50% 50%;
+	background-position: 0 50%, 50% 50%;
 	min-height: 700px;
 	text-align: center;
+	overflow: hidden;
 }
 
 #nsec5 > .-content {
 	position: absolute;
-	bottom: 0;
+	bottom: 1.25em;
 	right: 0;
-	padding: 1em;
-	background: white;
-	border: solid black;
-	border-width: 1px 0 0 1px;
-	border-radius: 5px 0 0 0;
-	max-width: 500px;
-	text-align: left;
+	margin-right: -3em;
+	padding: .5em 4.25em 1.5em 1.75em;
+	max-width: 450px;
+	background: rgba(65, 65, 65, .5);
+	color: white;
+	border: solid #0000;
+	border-width: 2px 0 0 2px;
+	border-radius: 5px 0 0 5px;
+	text-align: right;
+	font-size: 1.38em;
+	transform: skewX(10deg);
+}
+
+#nsec5 > .-content > p {
+	transform: skewX(-10deg);
 }
 
 #nsec5 > .-extra {
@@ -570,7 +579,7 @@ h2 {
 		font-size: 1.5em;
 	}
 
-	#nsec2 > .-content, #nsec3 > .-content {
+	#nsec2 > .-content, #nsec3 > .-content, #nsec5 > .-content {
 		padding-bottom: .5em;
 	}
 
@@ -612,7 +621,7 @@ h2 {
 		max-width: calc(100% - 9em);
 	}
 
-	#nsec3 > .-content {
+	#nsec3 > .-content, #nsec5 > .-content {
 		font-size: 1em;
 		right: -.9em;
 		max-width: calc(100% - 9em);
@@ -630,7 +639,7 @@ h2 {
 		left: 0;
 	}
 
-	#nsec4 > .-content, #nsec5 > .-content {
+	#nsec4 > .-content {
 		max-width: unset;
 		box-sizing: border-box;
 		width: 100%;
@@ -641,6 +650,10 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
+	#nsec1 > .-content > .-c2 > .-jobs {
+		font-size: .75em;
+	}
+
 	#nsec2 {
 		min-height: 450px;
 		background-position: 70% 0, 50% 50%;
@@ -651,9 +664,19 @@ h2 {
 		background-position: 35% 25px, 50% 50%;
 	}
 
+	#nsec5 {
+		min-height: 400px;
+		background-position: 0 0, 50% 50%;
+	}
+
 	#nsec2 > .-content, #nsec3 > .-content {
 		max-width: calc(100% - 10em);
 		bottom: 3em;
+	}
+
+	#nsec5 > .-content {
+		max-width: calc(100% - 10em);
+		bottom: 1em;
 	}
 
 	#nsec2 > .-phone {
@@ -675,8 +698,18 @@ h2 {
 	}
 }
 
+@media screen and (max-width: 400px) {
+	#nsec1 > .-content > .-c2 > .-jobs {
+		font-size: 1em;
+	}
+
+	#nsec1 > .-content > .-c2 {
+		font-size: .65em;
+	}
+}
+
 @media screen and (max-width: 350px) {
-	#nsec2 > .-content, #nsec3 > .-content {
+	#nsec2 > .-content, #nsec3 > .-content, #nsec5 > .-content {
 		bottom: 1em;
 	}
 
