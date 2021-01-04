@@ -603,12 +603,12 @@ h2 {
 @media screen and (max-width: 500px) {
 	#nsec2 > .-content, #nsec3 > .-content {
 		max-width: calc(100% - 10em);
+		bottom: 5em;
 	}
 
 	#nsec2 > .-phone {
-		bottom: 15em;
+		bottom: 10em;
 		margin-right: -1em;
-		height: 8em;
 	}
 
 	#nsec3 > .-heading, #nsec4 > .-heading {
@@ -617,5 +617,11 @@ h2 {
 		width: 100%;
 		border-left: 0;
 		border-radius: 0;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#nsec2 > .-content, #nsec3 > .-content {
+		bottom: 1em;
 	}
 }
