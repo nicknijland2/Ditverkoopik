@@ -159,7 +159,7 @@ header > .-phone > a > img {
 	background: url(res/img12-3-1.png), url(res/white.png);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
-	background-position: 50% 50%, 50% 50%;
+	background-position: 70% 50%, 50% 50%;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -167,7 +167,7 @@ header > .-phone > a > img {
 
 #nsec2 > .-content {
 	position: absolute;
-	bottom: 0;
+	bottom: 1.25em;
 	left: -.75em;
 	padding: .5em 1.75em 1.5em 1em;
 	max-width: 450px;
@@ -190,7 +190,7 @@ header > .-phone > a > img {
 	transform: rotate(-7deg);
 	height: 20em;
 	bottom: 3em;
-	right: calc(50% - 22em);
+	right: calc(50% - 32em);
 }
 
 #nsec3 {
@@ -521,6 +521,12 @@ h2 {
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	#nsec2 > .-phone {
+		right: calc(50% - 27em);
+	}
+}
+
 @media screen and (max-width: 950px) {
 	#nsec1 > .-content > .-c1 {
 		left: 3em;
@@ -537,13 +543,13 @@ h2 {
 	}
 
 	#nsec2 > .-content {
-		bottom: 1.25em;
 	}
 
 	#nsec2 > .-phone {
 		height: 15em;
-		padding-right: 2em;
+		padding-right: -1em;
 		bottom: 8em;
+		right: calc(50% - 22em);
 	}
 
 	#nsec4 > .-extra {
