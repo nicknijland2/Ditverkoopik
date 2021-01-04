@@ -585,7 +585,7 @@ h2 {
 	}
 
 	#nsec2 > .-phone {
-		height: 10.5em;
+		height: 12em;
 		bottom: 9em;
 		right: 0;
 	}
@@ -603,7 +603,7 @@ h2 {
 @media screen and (max-width: 500px) {
 	#nsec2 > .-content, #nsec3 > .-content {
 		max-width: calc(100% - 10em);
-		bottom: 5em;
+		bottom: 3em;
 	}
 
 	#nsec2 > .-phone {
@@ -623,5 +623,10 @@ h2 {
 @media screen and (max-width: 350px) {
 	#nsec2 > .-content, #nsec3 > .-content {
 		bottom: 1em;
+	}
+
+	#nsec2 > .-phone {
+		height: 7em;
+		bottom: 17em;
 	}
 }
