@@ -382,13 +382,19 @@ header > .-phone > a > img {
 }
 
 #nsecrev {
+	position: relative;
+	overflow-y: hidden;
+}
+
+#nsecrev > .-reviews {
 	white-space: nowrap;
 	overflow-x: auto;
 	overflow-y: hidden;
 	position: relative;
+	border-radius: 5px;
 }
 
-#nsecrev::before {
+#nsecrev > .-reviews::before {
 	display: inline-block;
 	content: "\279c";
 	position: absolute;
@@ -406,39 +412,39 @@ header > .-phone > a > img {
 	transition: .2s ease;
 }
 
-#nsecrev.-nosel::before {
+#nsecrev > .-reviews.-nosel::before {
 	opacity: 0;
 }
 
-#nsecrev > .-review {
+#nsecrev > .-reviews > .-review {
 	display: inline-block;
 }
 
-#nsecrev > .-review > div {
+#nsecrev > .-reviews > .-review > div {
 	white-space: normal;
 	display: flex;
 	align-items: center;
 	max-width: 500px;
 }
 
-#nsecrev > .-review:not(:last-child) > div {
+#nsecrev > .-reviews > .-review:not(:last-child) > div {
 	margin-right: 2em;
 	padding-right: 2em;
 	border-right: 1px solid var(--orange-one);
 }
 
-#nsecrev > .-review > div > .-user {
+#nsecrev > .-reviews > .-review > div > .-user {
 	margin-right: 1em;
 }
 
-#nsecrev > .-review > div > .-user > img {
+#nsecrev > .-reviews > .-review > div > .-user > img {
 	width: 3.5em;
 	height: 3.5em;
 	object-fit: cover;
 	border-radius: 50%;
 }
 
-#nsecrev > .-review > div > .-msg > .-stars {
+#nsecrev > .-reviews > .-review > div > .-msg > .-stars {
 	margin-top: .5em;
 }
 
