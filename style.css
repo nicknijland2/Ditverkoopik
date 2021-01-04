@@ -171,16 +171,16 @@ header > .-phone > a > img {
 #nsec2 > .-content {
 	position: absolute;
 	bottom: 1.25em;
-	left: -.75em;
-	padding: .5em 1.75em 1.5em 1em;
+	left: -1em;
+	padding: .5em 1.75em 1.5em 1.25em;
 	max-width: 450px;
 	background: rgba(65, 65, 65, .5);
 	color: white;
-	border: solid #0000;/*8;*/
+	border: solid #0000;
 	border-width: 2px 2px 0 0;
 	border-radius: 0 5px 5px 0;
 	text-align: left;
-	font-size: 1.25em;
+	font-size: 1.38em;
 	transform: skewX(-10deg);
 }
 
@@ -221,18 +221,22 @@ header > .-phone > a > img {
 
 #nsec3 > .-content {
 	position: absolute;
-	bottom: 0;
+	bottom: 1.25em;
 	left: -.75em;
-	padding: 1em;
-	max-width: 750px;
-	background: rgb(65, 65, 65);
+	padding: .5em 1.75em 1.5em 1em;
+	max-width: 450px;
+	background: rgba(65, 65, 65, .5);
 	color: white;
-	border: solid black;
-	border-width: 1px 1px 0 0;
-	border-radius: 5px 5px 0 0;
+	border: solid #0000;
+	border-width: 2px 2px 0 0;
+	border-radius: 0 5px 5px 0;
 	text-align: left;
 	font-size: 1.25em;
 	transform: skewX(-10deg);
+}
+
+#nsec3 > .-content > p {
+	transform: skewX(10deg);
 }
 
 #nsec4 {
@@ -522,6 +526,10 @@ h2 {
 		opacity: 1;
 		pointer-events: all;
 	}
+
+	#nsec2 {
+		background-position: 70% -100px, 50% 50%;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -545,7 +553,7 @@ h2 {
 		font-size: 1.5em;
 	}
 
-	#nsec2 > .-content {
+	#nsec2 > .-content, #nsec3 > .-content {
 		padding-bottom: .5em;
 	}
 
@@ -566,7 +574,11 @@ h2 {
 		left: 1em;
 	}
 
-	#nsec2 > .-content {
+	#nsec2 {
+		background-position: 70% 50px, 50% 50%;
+	}
+
+	#nsec2 > .-content, #nsec3 > .-content {
 		font-size: 1em;
 		left: -.9em;
 		max-width: calc(100% - 9em);
@@ -578,7 +590,7 @@ h2 {
 		right: 0;
 	}
 
-	#nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
+	#nsec4 > .-content, #nsec5 > .-content {
 		max-width: unset;
 		box-sizing: border-box;
 		width: 100%;
@@ -589,11 +601,7 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
-	#nsec2 {
-		background-position: 70% 50px, 50% 50%;
-	}
-
-	#nsec2 > .-content {
+	#nsec2 > .-content, #nsec3 > .-content {
 		max-width: calc(100% - 4em);
 	}
 
