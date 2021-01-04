@@ -41,12 +41,20 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		if(isInViewport(document.querySelector('#nsecrev > .-reviews'))) {
 			clearInterval(vp);
 			setTimeout(function () {
-				$('#nsecrev > .-reviews').animate({
-					scrollLeft: 2000//$('#nsecrev > .-reviews').offset().right
-				}, 50000, "linear");
+				animNSC();
 			}, 1000);
 		}
 	}, 100);
+
+	$('#nsecrev > .-reviews, #nsecrev > .-reviews > *').click(function () {
+		$('#nsecrev > .-reviews').stop();
+	});
+
+	function animNSC() {
+		$('#nsecrev > .-reviews').animate({
+			scrollLeft: 2000
+		}, 50000, "linear");
+	}
 });
 
 function isInViewport(element) {

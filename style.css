@@ -384,11 +384,12 @@ header > .-phone > a > img {
 #nsecrev {
 	position: relative;
 	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 #nsecrev > .-reviews {
 	white-space: nowrap;
-	overflow-x: auto;
+	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
 	border-radius: 5px;
@@ -407,7 +408,7 @@ header > .-phone > a > img {
 	background: linear-gradient(to right, transparent, #000 90%);
 	color: #fff;
 	transform: translate(-100%, -50%) scale(1.1);
-	opacity: 1;
+	opacity: 0;
 	pointer-events: none;
 	transition: .2s ease;
 }
