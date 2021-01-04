@@ -25,8 +25,10 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 	});
 
 	document.addEventListener("scroll", function () {
-		document.querySelector("header > .-phone").style.cssText = (window.pageYOffset < 10 ? "opacity: 0; pointer-events: none;" : "");
+		document.querySelector("header > .-phone").style.cssText = (window.pageYOffset < 500 ? "opacity: 0; pointer-events: none;" : "");
 	});
+
+	document.querySelector("header > .-phone").style.cssText = "opacity: 0; pointer-events: none;";
 
 	document.getElementById('nsecrev').addEventListener("scroll", function () {
 		document.getElementById('nsecrev').classList.add("-nosel");
