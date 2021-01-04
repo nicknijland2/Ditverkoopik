@@ -35,4 +35,25 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 	});
 
 	document.querySelectorAll(".domi-spanify").forEach(el1 => el1.innerHTML = el1.innerHTML.split(" ").map(el2 => "<span style='display: inline-block;'>" + el2 + "</span>").join(" "));
+
+	var vp = setInterval(function () {
+		//document.querySelector('#nsecrev > .-reviews').scrollX += 10;
+		if(isInViewport(document.querySelector('#nsecrev > .-reviews'))) {
+			clearInterval(vp);
+			$('#nsecrev > .-reviews').animate({
+				scrollLeft: 2000//$('#nsecrev > .-reviews').offset().right
+			}, 50000, "linear");
+			console.log("!");
+		}
+	}, 100);
 });
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
