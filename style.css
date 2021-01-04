@@ -670,8 +670,7 @@ h2 {
 	}
 
 	#nsec1 > .-content > .-c1 {
-		top: 0;
-		transform: unset;
+		font-size: .75em;
 	}
 
 	#nsec1 > .-content > .-c2 > .-jobs {
