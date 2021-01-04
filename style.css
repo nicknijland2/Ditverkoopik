@@ -608,11 +608,11 @@ h2 {
 
 	#nsec2 > .-content, #nsec3 > .-content {
 		max-width: calc(100% - 10em);
-		bottom: 4em;
+		bottom: 3em;
 	}
 
 	#nsec2 > .-phone {
-		bottom: 12em;
+		bottom: 11em;
 		margin-right: -1em;
 	}
 
