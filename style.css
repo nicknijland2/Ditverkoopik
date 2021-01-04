@@ -590,7 +590,7 @@ h2 {
 
 @media screen and (max-width: 500px) {
 	#nsec2 {
-		background-position: 70% 50px;
+		background-position: 70% 50px, 50% 50%;
 	}
 
 	#nsec2 > .-content {
