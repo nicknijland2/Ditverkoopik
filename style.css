@@ -198,10 +198,10 @@ header > .-phone > a > img {
 
 #nsec3 {
 	position: relative;
-	background: url(res/img9.png), url(res/white.png);
+	background: url(res/img13.png), url(res/white.png);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
-	background-position: 50% 50%, 50% 50%;
+	background-position: 30% 50%, 50% 50%;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -222,21 +222,30 @@ header > .-phone > a > img {
 #nsec3 > .-content {
 	position: absolute;
 	bottom: 1.25em;
-	left: -.75em;
-	padding: .5em 1.75em 1.5em 1em;
+	right: 0;
+	margin-right: -3em;
+	padding: .5em 4.25em 1.5em 1.75em;
 	max-width: 450px;
 	background: rgba(65, 65, 65, .5);
 	color: white;
 	border: solid #0000;
-	border-width: 2px 2px 0 0;
-	border-radius: 0 5px 5px 0;
-	text-align: left;
-	font-size: 1.25em;
-	transform: skewX(-10deg);
+	border-width: 2px 0 0 2px;
+	border-radius: 5px 0 0 5px;
+	text-align: right;
+	font-size: 1.38em;
+	transform: skewX(10deg);
 }
 
 #nsec3 > .-content > p {
-	transform: skewX(10deg);
+	transform: skewX(-10deg);
+}
+
+#nsec3 > .-phone {
+	position: absolute;
+	transform: rotate(7deg);
+	height: 20em;
+	bottom: 3em;
+	left: calc(50% - 32em);
 }
 
 #nsec4 {
@@ -530,11 +539,19 @@ h2 {
 	#nsec2 {
 		background-position: 70% -100px, 50% 50%;
 	}
+
+	#nsec3 {
+		background-position: 30% -100px, 50% 50%;
+	}
 }
 
 @media screen and (max-width: 1200px) {
 	#nsec2 > .-phone {
 		right: calc(50% - 27em);
+	}
+
+	#nsec3 > .-phone {
+		left: calc(50% - 27em);
 	}
 }
 
@@ -564,6 +581,13 @@ h2 {
 		right: calc(50% - 22em);
 	}
 
+	#nsec3 > .-phone {
+		height: 15em;
+		padding-left: -1em;
+		bottom: 8em;
+		left: calc(50% - 22em);
+	}
+
 	#nsec4 > .-extra {
 		bottom: 7em;
 	}
@@ -574,13 +598,23 @@ h2 {
 		left: 1em;
 	}
 
-	#nsec2, #nsec3 {
+	#nsec2 {
 		background-position: 70% 50px, 50% 50%;
 	}
 
-	#nsec2 > .-content, #nsec3 > .-content {
+	#nsec3 {
+		background-position: 30% 50px, 50% 50%;
+	}
+
+	#nsec2 > .-content {
 		font-size: 1em;
 		left: -.9em;
+		max-width: calc(100% - 9em);
+	}
+
+	#nsec3 > .-content {
+		font-size: 1em;
+		right: -.9em;
 		max-width: calc(100% - 9em);
 	}
 
@@ -588,6 +622,12 @@ h2 {
 		height: 12em;
 		bottom: 9em;
 		right: 0;
+	}
+
+	#nsec3 > .-phone {
+		height: 12em;
+		bottom: 9em;
+		left: 0;
 	}
 
 	#nsec4 > .-content, #nsec5 > .-content {
@@ -601,9 +641,14 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
-	#nsec2, #nsec3 {
+	#nsec2 {
 		min-height: 450px;
 		background-position: 70% 0, 50% 50%;
+	}
+
+	#nsec3 {
+		min-height: 450px;
+		background-position: 30% 0, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content {
@@ -614,6 +659,11 @@ h2 {
 	#nsec2 > .-phone {
 		bottom: 11em;
 		margin-right: -1em;
+	}
+
+	#nsec3 > .-phone {
+		bottom: 11em;
+		margin-left: -1em;
 	}
 
 	#nsec3 > .-heading, #nsec4 > .-heading {
@@ -630,7 +680,7 @@ h2 {
 		bottom: 1em;
 	}
 
-	#nsec2 > .-phone {
+	#nsec2 > .-phone, #nsec3 > .-phone {
 		height: 7em;
 		bottom: 17em;
 	}
