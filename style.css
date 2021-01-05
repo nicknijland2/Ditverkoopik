@@ -376,14 +376,20 @@ header > .-phone > a > img {
 	text-align: left;
 }
 
-#sec1 {
-	font-size: 1.5em;
-	position: relative;
-	background: url(res/background1.jpg);
-	background-size: cover;
-	background-position: 50% 50%;
-	min-height: 500px;
-	text-align: center;
+#nsec2 > .-contactbutton, #nsec3 > .-contactbutton, #nsec4 > .-contactbutton, #nsec5 > .-contactbutton {
+	position: absolute;
+	top: 0; right: 0;
+	padding: .5em .5em 0 0;
+}
+
+#nsec2 > .-contactbutton > a > button, #nsec3 > .-contactbutton > a > button, #nsec4 > .-contactbutton > a > button, #nsec5 > .-contactbutton > a > button {
+	font-size: 1em;
+	padding: .5em 2em;
+	border-radius: 5px;
+	border: none;
+	background: #0008;
+	color: #fff;
+	border: 1px solid #fff;
 }
 
 #nsecrev {
