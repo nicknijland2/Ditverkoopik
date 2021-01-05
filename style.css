@@ -626,22 +626,30 @@ h2 {
 		font-size: 1.5em;
 	}
 
+	#nsec2 {
+		background-position: 70% -150px, 50% 50%, 50% 50%, 50% 50%;
+	}
+
+	#nsec3 {
+		background-position: 35% -100px, 50% 50%;
+	}
+
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
 		padding-bottom: .5em;
-		bottom: 3em;
+		bottom: 4em;
 	}
 
 	#nsec2 > .-phone {
 		height: 15em;
 		padding-right: -1em;
-		bottom: 8em;
+		bottom: 10em;
 		right: calc(50% - 22em);
 	}
 
 	#nsec3 > .-phone {
 		height: 15em;
 		padding-left: -1em;
-		bottom: 8em;
+		bottom: 10em;
 		left: calc(50% - 22em);
 	}
 
@@ -718,12 +726,12 @@ h2 {
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content {
 		max-width: calc(100% - 10em);
-		bottom: 3em;
+		/*bottom: 3em;*/
 	}
 
 	#nsec5 > .-content {
 		max-width: calc(100% - 10em);
-		bottom: 1em;
+		/*bottom: 1em;*/
 	}
 
 	#nsec2 > .-phone {
