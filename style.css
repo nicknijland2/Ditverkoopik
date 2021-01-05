@@ -9,6 +9,11 @@
 * { font-family: 'Source Sans Pro', sans-serif; margin: 0; }
 *::selection { background: #000B; color: white; }
 
+a {
+	color: var(--orange-one);
+	text-decoration: dotted underline;
+}
+
 body {
 	overflow-x: hidden;
 	background: linear-gradient(135deg, var(--orange-four), var(--orange-one));
@@ -168,11 +173,11 @@ header > .-phone > a > img {
 
 #nsec2 {
 	position: relative;
-	background: url(res/img12-3-3.png), url(res/white50.png), url(res/background4.jpeg);
-	background-attachment: scroll, scroll, fixed;
-	background-size: contain, cover, cover;
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-position: 70% 50%, 50% 50%, 50% 50%;
+	background: url(res/img12-3-3.png), url(res/white50.png), url(res/background4-1.png), url(res/white.png);
+	background-attachment: scroll, scroll, fixed, scroll;
+	background-size: contain, cover, cover, cover;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: 70% 50%, 50% 50%, 50% 50%, 50% 50%;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -378,8 +383,14 @@ header > .-phone > a > img {
 
 #nsec2 > .-contactbutton, #nsec3 > .-contactbutton, #nsec4 > .-contactbutton, #nsec5 > .-contactbutton {
 	position: absolute;
-	top: 0; right: 0;
-	padding: .5em .5em 0 0;
+	bottom: 0; right: 0;
+	padding: 0 .5em .5em 0;
+}
+
+#nsec3 > .-contactbutton, #nsec5 > .-contactbutton {
+	right: unset;
+	left: 0;
+	padding: 0 0 .5em .5em;
 }
 
 #nsec2 > .-contactbutton > a > button, #nsec3 > .-contactbutton > a > button, #nsec4 > .-contactbutton > a > button, #nsec5 > .-contactbutton > a > button {
@@ -387,9 +398,10 @@ header > .-phone > a > img {
 	padding: .5em 2em;
 	border-radius: 5px;
 	border: none;
-	background: #0008;
-	color: #fff;
-	border: 1px solid #fff;
+	background: #fffc;
+	font-weight: bold;
+	color: var(--orange-one);
+	border: 1px solid var(--orange-one);
 }
 
 #nsecrev {
@@ -581,7 +593,7 @@ h2 {
 	}
 
 	#nsec2 {
-		background-position: 70% -100px, 50% 50%, 50% 50%;
+		background-position: 70% -100px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
@@ -616,6 +628,7 @@ h2 {
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
 		padding-bottom: .5em;
+		bottom: 3em;
 	}
 
 	#nsec2 > .-phone {
@@ -643,7 +656,7 @@ h2 {
 	}
 
 	#nsec2 {
-		background-position: 70% 50px, 50% 50%, 50% 50%;
+		background-position: 70% 50px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
@@ -690,7 +703,7 @@ h2 {
 
 	#nsec2 {
 		min-height: 450px;
-		background-position: 70% 0, 50% 50%, 50% 50%;
+		background-position: 70% 0, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {

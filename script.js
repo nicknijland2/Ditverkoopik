@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		}
 	}, 100);
 
-	$('#nsecrev > .-reviews, #nsecrev > .-reviews > *').click(function () {
+	/*$('#nsecrev > .-reviews, #nsecrev > .-reviews > *').click(function () {
 		$('#nsecrev > .-reviews').stop();
-	});
+	});*/
 
 	function animNSC() {
 		$('#nsecrev > .-reviews').animate({
