@@ -178,7 +178,7 @@ header > .-phone > a > img {
 	background-size: contain, cover, cover, cover;
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	background-position: 70% 50%, 50% 50%, 50% 50%, 50% 50%;
-	min-height: 500px;
+	min-height: 550px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -267,9 +267,10 @@ header > .-phone > a > img {
 
 #nsec4 {
 	position: relative;
-	background: url(res/img6.jpeg);
-	background-size: cover;
-	background-position: 10% 50%;
+	background: url(res/img15.png), url(res/background2.jpeg);
+	background-size: contain, cover;
+	background-position: 70% 50%, 10% 50%;
+	background-repeat: no-repeat, no-repeat;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -285,20 +286,6 @@ header > .-phone > a > img {
 	border: solid black;
 	border-width: 0 0 1px 1px;
 	border-radius: 0 0 0 5px;
-}
-
-#nsec4 > .-heading2 {
-	position: absolute;
-	top: 3em;
-	left: 0em;
-	font-size: 2.5em;
-	width: calc(100% - 1.5em);
-	max-width: 500px;
-	text-align: left;
-	font-weight: bold;
-	background: #fff8;
-	border-radius: 0 .5em .5em 0;
-	padding-left: .5em;
 }
 
 #nsec4 > .-content {
@@ -320,18 +307,6 @@ header > .-phone > a > img {
 
 #nsec4 > .-content > p > span {
 	transform: skewX(10deg);
-}
-
-#nsec4 > .-extra {
-	position: absolute;
-	bottom: 2em;
-	right: 2em;
-	padding: 1em;
-	background: white;
-	border: 1px solid black;
-	border-radius: 100vw;
-	max-width: 500px;
-	text-align: left;
 }
 
 #nsec5 {
@@ -416,28 +391,7 @@ header > .-phone > a > img {
 	overflow-y: hidden;
 	position: relative;
 	border-radius: 5px;
-}
-
-#nsecrev > .-reviews::before {
-	display: inline-block;
-	content: "\279c";
-	position: absolute;
-	top: 50%;
-	left: calc(100% + 2.5em);
-	padding: 5em 3em 5em 1em;
-	font-size: 4em;
-	font-weight: bold;
-	text-shadow: 0 0 10px #000;
-	background: linear-gradient(to right, transparent, #000 90%);
-	color: #fff;
-	transform: translate(-100%, -50%) scale(1.1);
-	opacity: 0;
-	pointer-events: none;
-	transition: .2s ease;
-}
-
-#nsecrev > .-reviews.-nosel::before {
-	opacity: 0;
+	transition: 1s linear;
 }
 
 #nsecrev > .-reviews > .-review {
@@ -568,6 +522,15 @@ h2 {
 	padding-left: 1em;
 }*/
 
+#page-contact > .-social {
+	margin-top: .5em;
+	font-size: 1.4em;
+}
+
+#page-contact > .-social > *:not(:last-child) {
+	margin-right: .5em;
+}
+
 @media screen and (max-width: 1400px) {
 	header > .-laptop {
 		margin-top: 0;
@@ -598,6 +561,10 @@ h2 {
 
 	#nsec3 {
 		background-position: 35% -50px, 50% 50%;
+	}
+
+	#nsec4 {
+		background-position: 70% -100px, 50% 50%;
 	}
 }
 
@@ -671,6 +638,10 @@ h2 {
 		background-position: 35% 100px, 50% 50%;
 	}
 
+	#nsec4 {
+		background-position: 70% 50px, 50% 50%;
+	}
+
 	#nsec2 > .-content, #nsec4 > .-content {
 		font-size: 1em;
 		left: -.9em;
@@ -710,13 +681,17 @@ h2 {
 	}
 
 	#nsec2 {
-		min-height: 450px;
+		min-height: 500px;
 		background-position: 70% 0, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
 		min-height: 450px;
 		background-position: 35% 25px, 50% 50%;
+	}
+
+	#nsec4 {
+		background-position: 70% 100px, 50% 50%;
 	}
 
 	#nsec5 {
