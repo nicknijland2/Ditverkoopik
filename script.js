@@ -36,16 +36,10 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 
 	document.querySelectorAll(".domi-spanify").forEach(el1 => el1.innerHTML = el1.innerHTML.split(" ").map(el2 => "<span style='display: inline-block;'>" + el2 + "</span>").join(" ").replace(/<span style='display: inline-block;'><br><\/span>/g, "<br>"));
 
-	var vp = setInterval(function () {
-		//document.querySelector('#nsecrev > .-reviews').scrollX += 10;
-		if(isInViewport(document.querySelector('#nsecrev > .-reviews'))) {
-			clearInterval(vp);
-			setInterval(function () {
-				animNSC();
-			}, 30000 + 500 + 200 + 500);
-			animNSC();
-		}
-	}, 100);
+	setInterval(function () {
+		animNSC();
+	}, 45000 + 500 + 200);
+	animNSC();
 
 	/*$('#nsecrev > .-reviews, #nsecrev > .-reviews > *').click(function () {
 		$('#nsecrev > .-reviews').stop();
@@ -54,14 +48,14 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 	function animNSC() {
 		setTimeout(function () {
 			$('#nsecrev > .-reviews').animate({
-				scrollLeft: 500 * 4
-			}, 30000, "linear");
+				scrollLeft: 500 * 3
+			}, 45000, "linear");
 
 			setTimeout(function () {
 				$('#nsecrev > .-reviews').animate({
 					scrollLeft: 0
 				}, 200, "linear");
-			}, 30000 + 500);
+			}, 45000 + 500);
 		}, 500);
 	}
 });
