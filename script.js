@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 			clearInterval(vp);
 			setInterval(function () {
 				animNSC();
-			}, 15000 + 500 + 200 + 500);
+			}, 30000 + 500 + 200 + 500);
 			animNSC();
 		}
 	}, 100);
@@ -55,13 +55,13 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		setTimeout(function () {
 			$('#nsecrev > .-reviews').animate({
 				scrollLeft: 500 * 4
-			}, 15000, "linear");
+			}, 30000, "linear");
 
 			setTimeout(function () {
 				$('#nsecrev > .-reviews').animate({
 					scrollLeft: 0
 				}, 200, "linear");
-			}, 15000 + 500);
+			}, 30000 + 500);
 		}, 500);
 	}
 });
