@@ -524,12 +524,12 @@ h2 {
 
 #page-contact > h1 {
 	text-align: center;
+	margin: .25em 0;
 }
 
 #page-contact > .-social {
-	margin-top: .5em;
+	margin-top: 1.5em;
 	font-size: 1.4em;
-	text-align: center;
 }
 
 #page-contact > .-social > *:not(:last-child) {
