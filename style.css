@@ -522,9 +522,14 @@ h2 {
 	padding-left: 1em;
 }*/
 
+#page-contact > h1 {
+	text-align: center;
+}
+
 #page-contact > .-social {
 	margin-top: .5em;
 	font-size: 1.4em;
+	text-align: center;
 }
 
 #page-contact > .-social > *:not(:last-child) {
