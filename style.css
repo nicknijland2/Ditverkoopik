@@ -603,7 +603,7 @@ h2 {
 	}
 
 	#nsec3 {
-		background-position: 35% -100px, 50% 50%;
+		background-position: 35% 0px, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
@@ -687,12 +687,12 @@ h2 {
 
 	#nsec2 {
 		min-height: 500px;
-		background-position: 70% 50px, 50% 50%, 50% 50%, 50% 50%;
+		background-position: 70% 100px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
 		min-height: 450px;
-		background-position: 35% 50px, 50% 50%;
+		background-position: 35% 75px, 50% 50%;
 	}
 
 	#nsec4 {
@@ -715,11 +715,11 @@ h2 {
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
-		font-size: .85em;
+		font-size: .95em;
 	}
 
 	#nsec2 > .-phone {
-		bottom: 11em;
+		bottom: 6em;
 		margin-right: -1em;
 	}
 
@@ -748,9 +748,12 @@ h2 {
 }
 
 @media screen and (max-width: 350px) {
+	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
+		font-size: .9em;
+	}
 
 	#nsec2 > .-phone, #nsec3 > .-phone {
 		height: 7em;
-		bottom: 17em;
+		bottom: 11.5em;
 	}
 }
