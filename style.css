@@ -599,11 +599,11 @@ h2 {
 	}
 
 	#nsec2 {
-		background-position: 70% -150px, 50% 50%, 50% 50%, 50% 50%;
+		background-position: 70% -100px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
-		background-position: 35% 0px, 50% 50%;
+		background-position: 35% -100px, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
@@ -630,21 +630,34 @@ h2 {
 	}
 }
 
+@media screen and (max-width: 700px) {
+	#nsec2 {
+		background-position: 70% -50px, 50% 50%, 50% 50%, 50% 50%;
+	}
+
+	#nsec3 {
+		background-position: 35% -50px, 50% 50%;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	#nsec1 > .-content > .-c1 {
 		left: 1em;
 	}
 
 	#nsec2 {
-		background-position: 70% 50px, 50% 50%, 50% 50%, 50% 50%;
+		min-height: 350px;
+		background-position: 70% -100px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
-		background-position: 35% 100px, 50% 50%;
+		min-height: 350px;
+		background-position: 35% -75px, 50% 50%;
 	}
 
 	#nsec4 {
-		background-position: 70% 50px, 50% 50%;
+		min-height: 350px;
+		background-position: 70% -75px, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec4 > .-content {
@@ -686,18 +699,15 @@ h2 {
 	}
 
 	#nsec2 {
-		min-height: 400px;
-		background-position: 70% -25px, 50% 50%, 50% 50%, 50% 50%;
+		background-position: 70% -50px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
-		min-height: 400px;
-		background-position: 35% 0, 50% 50%;
+		background-position: 35% -25px, 50% 50%;
 	}
 
 	#nsec4 {
-		min-height: 400px;
-		background-position: 70% 25px, 50% 50%;
+		background-position: 70% 0, 50% 50%;
 	}
 
 	#nsec5 {
@@ -746,9 +756,21 @@ h2 {
 	#nsec1 > .-content > .-c2 {
 		font-size: .65em;
 	}
+
+	#nsec3 {
+		background-position: 70% -25px, 50% 50%, 50% 50%, 50% 50%;
+	}
+
+	#nsec4 {
+		background-position: 70% 0, 50% 50%;
+	}
 }
 
 @media screen and (max-width: 350px) {
+	#nsec2 {
+		background-position: 70% -60px, 50% 50%, 50% 50%, 50% 50%;
+	}
+
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
 		font-size: .9em;
 	}
