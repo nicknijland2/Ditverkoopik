@@ -686,17 +686,18 @@ h2 {
 	}
 
 	#nsec2 {
-		min-height: 500px;
-		background-position: 70% 100px, 50% 50%, 50% 50%, 50% 50%;
+		min-height: 400px;
+		background-position: 70% -25px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
-		min-height: 450px;
-		background-position: 35% 75px, 50% 50%;
+		min-height: 400px;
+		background-position: 35% 0, 50% 50%;
 	}
 
 	#nsec4 {
-		background-position: 70% 140px, 50% 50%;
+		min-height: 400px;
+		background-position: 70% 25px, 50% 50%;
 	}
 
 	#nsec5 {
@@ -724,7 +725,7 @@ h2 {
 	}
 
 	#nsec3 > .-phone {
-		bottom: 11em;
+		bottom: 6em;
 		margin-left: -1em;
 	}
 
