@@ -133,8 +133,9 @@ header > .-phone > a > img {
 
 #nsec1 > .-content > .-c2 {
 	position: absolute;
-	bottom: 1em;
-	margin-top: 1em;
+	bottom: 2rem;
+	margin-top: 2rem;
+	font-size: .75em;
 	width: calc(100% - 4rem);
 }
 
