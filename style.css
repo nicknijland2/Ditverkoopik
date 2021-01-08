@@ -699,15 +699,15 @@ h2 {
 	}
 
 	#nsec2 {
-		background-position: 70% -50px, 50% 50%, 50% 50%, 50% 50%;
+		background-position: 70% -65px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
-		background-position: 35% -25px, 50% 50%;
+		background-position: 35% -50px, 50% 50%;
 	}
 
 	#nsec4 {
-		background-position: 70% 0, 50% 50%;
+		background-position: 70% -65px, 50% 50%;
 	}
 
 	#nsec5 {
@@ -755,14 +755,6 @@ h2 {
 
 	#nsec1 > .-content > .-c2 {
 		font-size: .65em;
-	}
-
-	#nsec3 {
-		background-position: 70% -25px, 50% 50%, 50% 50%, 50% 50%;
-	}
-
-	#nsec4 {
-		background-position: 70% 0, 50% 50%;
 	}
 }
 
