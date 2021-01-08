@@ -173,14 +173,39 @@ header > .-phone > a > img {
 
 #nsec2 {
 	position: relative;
-	background: url(res/img12-3-3.png), url(res/white50.png), url(res/background4-1.png), url(res/white.png);
-	background-attachment: scroll, scroll, fixed, scroll;
-	background-size: contain, cover, cover, cover;
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-	background-position: 70% 50%, 50% 50%, 50% 50%, 50% 50%;
+	background: #fff;
 	min-height: 550px;
 	text-align: center;
 	overflow: hidden;
+}
+
+#nsec2 > .-coverbg {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(res/background4-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+}
+
+#nsec2 > .-coverwhite50 {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(res/white50.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#nsec2 > .-covermsg {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(res/img12-3-3.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 70% 50%;
+	background-attachment: scroll;
 }
 
 #nsec2 > .-content {
@@ -560,8 +585,8 @@ h2 {
 		pointer-events: all;
 	}
 
-	#nsec2 {
-		background-position: 70% -100px, 50% 50%, 50% 50%, 50% 50%;
+	#nsec2 > .-covermsg {
+		background-position: 70% -100px, 50% 50%;
 	}
 
 	#nsec3 {
@@ -598,8 +623,8 @@ h2 {
 		font-size: 1.5em;
 	}
 
-	#nsec2 {
-		background-position: 70% -100px, 50% 50%, 50% 50%, 50% 50%;
+	#nsec2 > .-covermsg {
+		background-position: 70% -100px, 50% 50%;
 	}
 
 	#nsec3 {
@@ -631,8 +656,8 @@ h2 {
 }
 
 @media screen and (max-width: 700px) {
-	#nsec2 {
-		background-position: 70% -50px, 50% 50%, 50% 50%, 50% 50%;
+	#nsec2 > .-covermsg {
+		background-position: 70% -50px, 50% 50%;
 	}
 
 	#nsec3 {
@@ -647,7 +672,10 @@ h2 {
 
 	#nsec2 {
 		min-height: 350px;
-		background-position: 70% -100px, 50% 50%, 50% 50%, 50% 50%;
+	}
+
+	#nsec2 > .-covermsg {
+		background-position: 70% -100px, 50% 50%;
 	}
 
 	#nsec3 {
@@ -698,8 +726,8 @@ h2 {
 		font-size: .75em;
 	}
 
-	#nsec2 {
-		background-position: 70% -65px, 50% 50%, 50% 50%, 50% 50%;
+	#nsec2 > .-covermsg {
+		background-position: 70% -65px, 50% 50%;
 	}
 
 	#nsec3 {
@@ -759,8 +787,8 @@ h2 {
 }
 
 @media screen and (max-width: 350px) {
-	#nsec2 {
-		background-position: 70% -60px, 50% 50%, 50% 50%, 50% 50%;
+	#nsec2 > .-covermsg {
+		background-position: 70% -60px, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
