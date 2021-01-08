@@ -714,6 +714,10 @@ h2 {
 		/*bottom: 1em;*/
 	}
 
+	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
+		font-size: .85em;
+	}
+
 	#nsec2 > .-phone {
 		bottom: 11em;
 		margin-right: -1em;
