@@ -748,9 +748,6 @@ h2 {
 }
 
 @media screen and (max-width: 350px) {
-	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
-		bottom: 1em;
-	}
 
 	#nsec2 > .-phone, #nsec3 > .-phone {
 		height: 7em;
