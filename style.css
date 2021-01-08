@@ -128,15 +128,14 @@ header > .-phone > a > img {
 	transform: translateY(-75%);
 	text-align: left;
 	margin-top: 1em;
-	width: calc(100% - 4rem);
+	width: calc(100% - 2em);
 }
 
 #nsec1 > .-content > .-c2 {
 	position: absolute;
-	bottom: 2rem;
-	margin-top: 2rem;
-	font-size: .75em;
-	width: calc(100% - 4rem);
+	bottom: 1em;
+	margin-top: 1em;
+	width: calc(100% - 2em);
 }
 
 #nsec1 > .-content > .-c2 > .-social {
