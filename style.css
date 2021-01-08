@@ -267,7 +267,7 @@ header > .-phone > a > img {
 
 #nsec4 {
 	position: relative;
-	background: url(res/img15.png), url(res/background2.jpeg);
+	background: url(res/img15-1.png), url(res/background2.jpeg);
 	background-size: contain, cover;
 	background-position: 70% 50%, 10% 50%;
 	background-repeat: no-repeat, no-repeat;
@@ -385,7 +385,7 @@ header > .-phone > a > img {
 	overflow-x: hidden;
 }
 
-#nsecrev > .-reviews {
+/*#nsecrev > .-reviews {
 	white-space: nowrap;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -394,35 +394,34 @@ header > .-phone > a > img {
 	transition: 1s linear;
 }
 
-#nsecrev > .-reviews > .-review {
+#nsecrev > .-reviews > .splide__track > .splide__list > .-review {
 	display: inline-block;
+}*/
+
+.splide__pagination__page.is-active {
+	background: #000!important;
 }
 
-#nsecrev > .-reviews > .-review > div {
+#nsecrev > .-reviews > .splide__track > .splide__list > .-review > div {
 	white-space: normal;
 	display: flex;
 	align-items: center;
 	max-width: 500px;
+	margin: 0 auto 2.5em auto;
 }
 
-#nsecrev > .-reviews > .-review:not(:last-child) > div {
-	margin-right: 2em;
-	padding-right: 2em;
-	border-right: 1px solid var(--orange-one);
-}
-
-#nsecrev > .-reviews > .-review > div > .-user {
+#nsecrev > .-reviews > .splide__track > .splide__list > .-review > div > .-user {
 	margin-right: 1em;
 }
 
-#nsecrev > .-reviews > .-review > div > .-user > img {
+#nsecrev > .-reviews > .splide__track > .splide__list > .-review > div > .-user > img {
 	width: 3.5em;
 	height: 3.5em;
 	object-fit: cover;
 	border-radius: 50%;
 }
 
-#nsecrev > .-reviews > .-review > div > .-msg > .-stars {
+#nsecrev > .-reviews > .splide__track > .splide__list > .-review > div > .-msg > .-stars {
 	margin-top: .5em;
 }
 
@@ -688,16 +687,16 @@ h2 {
 
 	#nsec2 {
 		min-height: 500px;
-		background-position: 70% 0, 50% 50%, 50% 50%, 50% 50%;
+		background-position: 70% 50px, 50% 50%, 50% 50%, 50% 50%;
 	}
 
 	#nsec3 {
 		min-height: 450px;
-		background-position: 35% 25px, 50% 50%;
+		background-position: 35% 50px, 50% 50%;
 	}
 
 	#nsec4 {
-		background-position: 70% 100px, 50% 50%;
+		background-position: 70% 140px, 50% 50%;
 	}
 
 	#nsec5 {

@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 	});*/
 
 	function animNSC() {
-		setTimeout(function () {
+		/*setTimeout(function () {
 			$('#nsecrev > .-reviews').animate({
 				scrollLeft: 500 * 3
 			}, 45000, "linear");
@@ -56,8 +56,20 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 					scrollLeft: 0
 				}, 200, "linear");
 			}, 45000 + 500);
-		}, 500);
+		}, 500);*/
 	}
+
+	new Splide('.splide', {
+		type: 'loop',
+		gap: "3em",
+		autoplay: true,
+		pauseOnFocus: true,
+		breakpoints: {
+			700: {
+				arrows: false
+			}
+		}
+	}).mount();
 });
 
 function isInViewport(element) {
