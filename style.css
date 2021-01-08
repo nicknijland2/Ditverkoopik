@@ -227,6 +227,7 @@ header > .-phone > a > img {
 
 #nsec2 > .-content > p > span {
 	transform: skewX(10deg);
+	margin-left: .1em;
 }
 
 #nsec2 > .-phone {
@@ -671,21 +672,21 @@ h2 {
 	}
 
 	#nsec2 {
-		min-height: 350px;
+		min-height: 375px;
 	}
 
 	#nsec2 > .-covermsg {
-		background-position: 70% -100px, 50% 50%;
+		background-position: 70% -75px, 50% 50%;
 	}
 
 	#nsec3 {
-		min-height: 350px;
-		background-position: 35% -75px, 50% 50%;
+		min-height: 375px;
+		background-position: 35% -50px, 50% 50%;
 	}
 
 	#nsec4 {
-		min-height: 350px;
-		background-position: 70% -75px, 50% 50%;
+		min-height: 375px;
+		background-position: 70% -50px, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec4 > .-content {
