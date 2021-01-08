@@ -128,12 +128,14 @@ header > .-phone > a > img {
 	transform: translateY(-75%);
 	text-align: left;
 	margin-top: 1em;
+	width: calc(100% - 4rem);
 }
 
 #nsec1 > .-content > .-c2 {
 	position: absolute;
 	bottom: 1em;
 	margin-top: 1em;
+	width: calc(100% - 4rem);
 }
 
 #nsec1 > .-content > .-c2 > .-social {
@@ -726,11 +728,11 @@ h2 {
 	}
 
 	#nsec2 > .-covermsg {
-		background-position: 70% -65px, 50% 50%;
+		background-position: 70% -40px, 50% 50%;
 	}
 
 	#nsec3 {
-		background-position: 35% -50px, 50% 50%;
+		background-position: 35% 0, 50% 50%;
 	}
 
 	#nsec4 {
