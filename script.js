@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		gap: "3em",
 		autoplay: true,
 		pauseOnFocus: true,
+		interval: 2000,
 		breakpoints: {
 			700: {
 				arrows: false
