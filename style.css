@@ -730,12 +730,12 @@ h2 {
 	}
 
 	#nsec2 > .-phone {
-		bottom: 6em;
+		bottom: 8em;
 		margin-right: -1em;
 	}
 
 	#nsec3 > .-phone {
-		bottom: 6em;
+		bottom: 8em;
 		margin-left: -1em;
 	}
 
@@ -767,8 +767,16 @@ h2 {
 		font-size: .9em;
 	}
 
-	#nsec2 > .-phone, #nsec3 > .-phone {
+	#nsec2 > .-phone {
 		height: 7em;
-		bottom: 11.5em;
+		margin-right: 1em;
+		bottom: 14.5em;
+	}
+
+	#nsec3 > .-phone {
+		height: 7em;
+		margin-right: 0;
+		margin-left: .5em;
+		bottom: 14.5em;
 	}
 }
