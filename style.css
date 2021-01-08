@@ -16,8 +16,8 @@ a {
 
 body {
 	overflow-x: hidden;
-	background: linear-gradient(135deg, var(--orange-four), var(--orange-one));
 	min-height: 100vh;
+	background: linear-gradient(135deg, var(--orange-four), var(--orange-one));
 }
 
 header {
@@ -177,12 +177,15 @@ header > .-phone > a > img {
 	min-height: 550px;
 	text-align: center;
 	overflow: hidden;
+	background: url(res/background4-1.png);
+	background-position: 50% 50%;
+	background-size: cover;
 }
 
 #nsec2 > .-coverbg {
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	background: url(res/background4-1.png);
+	background: transparent /*url(res/background4-1.png)*/;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;

@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 
 	document.addEventListener("scroll", function () {
 		document.querySelector("header > .-phone").style.cssText = (window.pageYOffset < 500 ? "opacity: 0; pointer-events: none;" : "");
+
+		document.querySelector("#nsec2").style.backgroundPositionY = (window.pageYOffset) + "px";
 	});
 
 	document.querySelector("header > .-phone").style.cssText = "opacity: 0; pointer-events: none;";
@@ -35,29 +37,6 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 	});
 
 	document.querySelectorAll(".domi-spanify").forEach(el1 => el1.innerHTML = el1.innerHTML.split(" ").map(el2 => "<span style='display: inline-block;'>" + el2 + "</span>").join(" ").replace(/<span style='display: inline-block;'><br><\/span>/g, "<br>"));
-
-	setInterval(function () {
-		animNSC();
-	}, 45000 + 500 + 200);
-	animNSC();
-
-	/*$('#nsecrev > .-reviews, #nsecrev > .-reviews > *').click(function () {
-		$('#nsecrev > .-reviews').stop();
-	});*/
-
-	function animNSC() {
-		/*setTimeout(function () {
-			$('#nsecrev > .-reviews').animate({
-				scrollLeft: 500 * 3
-			}, 45000, "linear");
-
-			setTimeout(function () {
-				$('#nsecrev > .-reviews').animate({
-					scrollLeft: 0
-				}, 200, "linear");
-			}, 45000 + 500);
-		}, 500);*/
-	}
 
 	new Splide('.splide', {
 		type: 'loop',
