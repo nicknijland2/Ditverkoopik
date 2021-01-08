@@ -685,8 +685,8 @@ h2 {
 	}
 
 	#nsec4 {
-		min-height: 375px;
-		background-position: 70% -50px, 50% 50%;
+		min-height: 275px;
+		background-position: 70% -75px, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec4 > .-content {
@@ -736,7 +736,7 @@ h2 {
 	}
 
 	#nsec4 {
-		background-position: 70% -65px, 50% 50%;
+		background-position: 70% -50px, 50% 50%;
 	}
 
 	#nsec5 {
