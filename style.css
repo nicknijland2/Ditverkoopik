@@ -709,7 +709,7 @@ h2 {
 	}
 
 	#nsec3 > .-covermsg {
-		background-position: 35% 0;
+		background-position: 35% -15px;
 	}
 
 	#nsec4 > .-covermsg {
@@ -754,8 +754,12 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
+	#nsec2 > .-covermsg {
+		background-position: 70% -10px;
+	}
+
 	#nsec3 > .-covermsg {
-		background-position: 70% 35px;
+		background-position: 70% 25px;
 	}
 }
 
@@ -773,7 +777,7 @@ h2 {
 	}
 
 	#nsec3 > .-covermsg {
-		background-position: 70% 25px;
+		background-position: 70% -35px;
 	}
 
 	#nsec4 > .-content {
