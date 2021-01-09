@@ -444,9 +444,7 @@ header > .-phone > a > img {
 }
 
 #nsecrev > .-reviews > .splide__track > .splide__list > .-review > div > .-user {
-	margin-right: .75em;
-	padding-right: .75em;
-	border-right: 1px solid var(--orange-one);
+	margin-right: 1em;
 }
 
 #nsecrev > .-reviews > .splide__track > .splide__list > .-review > div > .-user > img {
@@ -458,68 +456,6 @@ header > .-phone > a > img {
 
 #nsecrev > .-reviews > .splide__track > .splide__list > .-review > div > .-msg > .-stars {
 	margin-top: .5em;
-}
-
-#sec1 > .-cover {
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-	background: #000A;
-	border-radius: 5px;
-}
-
-#sec1 > .-content {
-	position: absolute;
-	bottom: 1em;
-	width: calc(100% - 2em);
-	color: #fff;
-}
-
-#sec1 > .-content > .-logo {
-	height: 4em;
-}
-
-#sec1 > .-content > h1 {
-	font-size: 3em;
-	text-shadow: 0 0 5px #fff8;
-}
-
-#sec1 > .-content > .-social {
-	margin-top: 1em;
-}
-
-#sec1 > .-content > .-social > * {
-	color: unset;
-	z-index: 1;
-}
-
-#sec1 > .-content > .-social > *:not(:last-child) {
-	margin-right: .5em;
-}
-
-#sec1 > .-content > .-social > *::after {
-	transform: rotateX(-90deg);
-	transform-origin: bottom left;
-	pointer-events: none;
-	content: attr(data-tooltip);
-	display: inline-block;
-	position: absolute;
-	background: #000e;
-	padding: 5px;
-	margin-top: calc(-2em);
-	margin-left: -1em;
-	border-radius: 5px;
-	transition: .2s ease;
-	z-index: 2;
-}
-
-#sec1 > .-content > .-social > *:hover::after {
-	transform: rotateX(0);
-}
-
-#sec2 {
-	padding: 1em;
-	font-size: 1.15em;
-	/*grid-column-end: -1;*/
 }
 
 h2::before {
@@ -543,18 +479,6 @@ h2 {
 	z-index: 1;
 	margin-bottom: .5em;
 }
-
-#sec2 > .-halfhalf {
-	margin-top: 2em;
-}
-
-/*#sec2 > .-halfhalf > *:first-child {
-	border-right: 1px solid #ededed;
-}
-
-#sec2 > .-halfhalf > *:last-child {
-	padding-left: 1em;
-}*/
 
 #page-contact > h1 {
 	text-align: center;

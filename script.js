@@ -24,11 +24,100 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		}
 	});
 
+	var nsec2scrolled = false, nsec3scrolled = false, nsec4scrolled = false, nsec5scrolled = false;
+
 	document.addEventListener("scroll", function () {
 		document.querySelector("header > .-phone").style.cssText = (window.pageYOffset < 500 ? "opacity: 0; pointer-events: none;" : "");
 
 		document.querySelector("#nsec2").style.backgroundPositionY = (window.pageYOffset) + "px";
+
+		checkScrollNsec();
 	});
+
+	checkScrollNsec();
+
+	function checkScrollNsec() {
+		if(!nsec2scrolled && isInViewport(document.querySelector('#nsec2'))) {
+			nsec2scrolled = true;
+
+			anime({
+				targets: '#nsec2 > .-content',
+				translateX: [-150, 0],
+				skewX: ["-10deg", "-10deg"],
+				duration: 3000
+			});
+
+			anime({
+				targets: '#nsec2 > .-covermsg',
+				translateY: [-150, 0],
+				delay: 100,
+				duration: 3000
+			});
+
+			anime({
+				targets: '#nsec2 > .-phone',
+				translateX: [150, 0],
+				rotate: ["-7deg", "-7deg"],
+				delay: 200,
+				duration: 3000
+			});
+		}
+
+		if(!nsec3scrolled && isInViewport(document.querySelector('#nsec3'))) {
+			nsec3scrolled = true;
+
+			anime({
+				targets: '#nsec3 > .-content',
+				translateX: [150, 0],
+				skewX: ["10deg", "10deg"],
+				duration: 3000
+			});
+
+			anime({
+				targets: '#nsec3 > .-phone',
+				translateX: [-150, 0],
+				rotate: ["7deg", "7deg"],
+				duration: 3000,
+				delay: 100
+			});
+
+			anime({
+				targets: '#nsec3 > .-covermsg',
+				translateY: [-150, 0],
+				delay: 200,
+				duration: 3000
+			});
+		}
+
+		if(!nsec4scrolled && isInViewport(document.querySelector('#nsec4'))) {
+			nsec4scrolled = true;
+
+			anime({
+				targets: '#nsec4 > .-content',
+				translateX: [-150, 0],
+				skewX: ["-10deg", "-10deg"],
+				duration: 3000
+			});
+
+			anime({
+				targets: '#nsec4 > .-covermsg',
+				translateY: [-150, 0],
+				duration: 3000,
+				delay: 100
+			});
+		}
+
+		if(!nsec5scrolled && isInViewport(document.querySelector('#nsec5'))) {
+			nsec5scrolled = true;
+
+			anime({
+				targets: '#nsec5 > .-content',
+				translateX: [150, 0],
+				skewX: ["10deg", "10deg"],
+				duration: 3000
+			});
+		}
+	}
 
 	document.querySelector("header > .-phone").style.cssText = "opacity: 0; pointer-events: none;";
 
@@ -50,64 +139,24 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 			}
 		}
 	}).mount();
-
-	anime({
-		targets: '#nsec2 > .-content',
-		translateX: [-150, 0],
-		duration: 3000,
-		skewX: ["-10deg", "-10deg"]
-	});
-
-	anime({
-		targets: '#nsec2 > .-covermsg',
-		translateY: [-150, 0],
-		duration: 3000
-	});
-
-	anime({
-		targets: '#nsec2 > .-phone',
-		translateX: [150, 0],
-		rotate: ["-7deg", "-7deg"],
-		duration: 3000
-	});
-
-	anime({
-		targets: '#nsec3 > .-content',
-		translateX: [150, 0],
-		duration: 3000,
-		skewX: ["10deg", "10deg"]
-	});
-
-	anime({
-		targets: '#nsec3 > .-phone',
-		translateX: [-150, 0],
-		rotate: ["7deg", "7deg"],
-		duration: 3000
-	});
-
-	anime({
-		targets: '#nsec3 > .-covermsg',
-		translateY: [-150, 0],
-		duration: 3000
-	});
-
-	anime({
-		targets: '#nsec4 > .-content',
-		translateX: [-150, 0],
-		duration: 3000,
-		skewX: ["-10deg", "-10deg"]
-	});
-
-	anime({
-		targets: '#nsec4 > .-covermsg',
-		translateY: [-150, 0],
-		duration: 3000
-	});
-
-	anime({
-		targets: '#nsec5 > .-content',
-		translateX: [150, 0],
-		duration: 3000,
-		skewX: ["10deg", "10deg"]
-	});
 });
+
+function isInViewport(element) {
+	const rect = element.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+		rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+	);
+}
+
+function isInViewportFull(element) {
+	const rect = element.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	);
+}
