@@ -158,7 +158,7 @@ function generateReviews(outp) {
 	const reviews = _.shuffle([
 		{
 			pp: "res/pp1.jpeg",
-			name: "Ella Jones",
+			name: "Ella",
 			desc: "Laatst een setje Airpods gekocht, ze werken perfect! Binnen 1 dag geleverd.",
 			title: "Perfect! Werkt goed",
 			rating: "5"
@@ -172,28 +172,28 @@ function generateReviews(outp) {
 		},
 		{
 			pp: "res/pp3.png",
-			name: "Achmed Dineh",
+			name: "Achmed",
 			desc: "Echt een held! Mijn telefoon was helemaal kapot en dezelfde dag nog helemaal nieuw gemaakt! Ongelooflijk hoe goedkoop ook vergeleken met Apple zelf.",
 			title: "Heel snel klaar",
 			rating: "5"
 		},
 		{
 			pp: "res/pp4.png",
-			name: "Hicham",
+			name: "Mike",
 			desc: "Prachtige nieuwe Macbook Air gekocht voor mijn vriendins verjaardag. Kreeg er zelfs een gratis hoesje bij. Aardige jongen ook, legt je alles uit en helpt je graag.",
 			title: "MacBook gekocht",
 			rating: "5"
 		},
 		{
 			pp: "res/pp5.png",
-			name: "Wilma de Vries",
+			name: "Wilma",
 			desc: "Hele aardige jongen. Verplaatste al mijn ouwe gegevens over naar me nieuwe telefoon en legde me goed uit hoe alles werkt in elkaar zat!",
 			title: "Goede service",
 			rating: "5"
 		},
 		{
 			pp: "res/pp6.png",
-			name: "Finn Cresswell",
+			name: "Finn",
 			desc: "Mijn telefoon was helemaal kapot. Kon dezelfde dag nog een iPhone XR krijgen met een schermprotector en hoesje en al.",
 			title: "Top telefoon weer",
 			rating: "4,5"
@@ -207,7 +207,7 @@ function generateReviews(outp) {
 		},
 		{
 			pp: "res/pp8.png",
-			name: "Miranda Trip",
+			name: "Miranda",
 			desc: "Goeie service, snelle levering en goed verpakt. Ik koop hier zeker meer in de toekomst :)",
 			title: "Helemaal waard",
 			rating: "5"
@@ -228,7 +228,7 @@ function generateReviews(outp) {
 		},
 		{
 			pp: "res/pp11.png",
-			name: "Brunhilde van Rozen",
+			name: "Brunhilde",
 			desc: "Ik heb paar week geleden Airpods 2 gekocht voor me zoons verjaardag, alles werkt en hij was er heel erg blij mee.",
 			title: "Airpods 2 gekocht",
 			rating: "5"
@@ -263,7 +263,7 @@ function generateReviews(outp) {
 		},
 		{
 			pp: "res/pp16.jpeg",
-			name: "Marcel Hulzebos",
+			name: "Marcel",
 			desc: "Toestel nu twee weken in bezit en zeer tevreden na overstap van mijn iPhone 7.",
 			title: "Top verkoper!",
 			rating: "5"
