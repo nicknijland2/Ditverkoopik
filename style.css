@@ -622,10 +622,6 @@ h2 {
 		background-size: calc(100vh);
 	}
 
-	#nsec4 {
-		background-size: calc(100vh / 3300 * 2048);
-	}
-
 	#nsec5 {
 		background-size: calc(100vh / 865 * 1000);
 	}
@@ -714,6 +710,10 @@ h2 {
 
 	#nsec3 > .-covermsg {
 		background-position: 35% -15px;
+	}
+
+	#nsec4 {
+		background-size: calc(100vh / 3300 * 2048);
 	}
 
 	#nsec4 > .-covermsg {
