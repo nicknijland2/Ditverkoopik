@@ -792,6 +792,12 @@ h2 {
 	}
 }
 
+@media screen and (max-width: 450px) {
+	#nsec3 > .-covermsg {
+		background-position: 70% 35px;
+	}
+}
+
 @media screen and (max-width: 400px) {
 	#nsec1 > .-content > .-c2 > .-jobs {
 		font-size: 1em;
