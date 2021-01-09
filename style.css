@@ -359,7 +359,7 @@ header > .-phone > a > img {
 
 #nsec5 {
 	position: relative;
-	background: url(res/background3.jpeg);
+	background: #fff /*url(res/background3.jpeg)*/;
 	background-size: cover;
 	background-position: 50% 50%;
 	min-height: 700px;

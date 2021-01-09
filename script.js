@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 	});
 
 	setInterval(function () {
-		document.querySelector("#nsec2").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec2").offsetTop) + "px";
-		document.querySelector("#nsec3").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec3").offsetTop) + "px";
-		document.querySelector("#nsec4").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec4").offsetTop) + "px";
-		document.querySelector("#nsec5").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec5").offsetTop) + "px";
+		document.querySelector("#nsec2").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec2").offsetTop) / 3) + "px";
+		document.querySelector("#nsec3").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec3").offsetTop) / 3) + "px";
+		document.querySelector("#nsec4").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec4").offsetTop) / 3) + "px";
+		document.querySelector("#nsec5").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec5").offsetTop) / 3) + "px";
 	}, 1);
 
 	checkScrollNsec();
