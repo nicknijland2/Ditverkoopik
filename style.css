@@ -557,6 +557,10 @@ h2 {
 		font-size: 1.5em;
 	}
 
+	#nsec2 {
+		background-size: calc(100vh * 110 / 96);
+	}
+
 	#nsec2 > .-covermsg {
 		background-position: 70% -100px;
 	}
