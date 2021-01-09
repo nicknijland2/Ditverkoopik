@@ -138,6 +138,8 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 
 	document.querySelectorAll(".domi-spanify").forEach(el1 => el1.innerHTML = el1.innerHTML.split(" ").map(el2 => "<span style='display: inline-block;'>" + el2 + "</span>").join(" ").replace(/<span style='display: inline-block;'><br><\/span>/g, "<br>"));
 
+	generateReviews(document.querySelector(".splide__list"));
+
 	new Splide('.splide', {
 		type: 'loop',
 		gap: "3em",
@@ -151,6 +153,143 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		}
 	}).mount();
 });
+
+function generateReviews(outp) {
+	const reviews = _.shuffle([
+		{
+			pp: "res/pp1.jpeg",
+			name: "Ella Jones",
+			desc: "Laatst een setje Airpods gekocht, ze werken perfect! Binnen 1 dag geleverd.",
+			title: "Perfect! Werkt goed",
+			rating: "5"
+		},
+		{
+			pp: "res/pp2.jpeg",
+			name: "Mart",
+			desc: "Heel aardig, kreeg een gratis screenprotector erbij. Ik raad het zeker aan!",
+			title: "Aan te raden!",
+			rating: "5"
+		},
+		{
+			pp: "res/pp3.png",
+			name: "Achmed Dineh",
+			desc: "Echt een held! Mijn telefoon was helemaal kapot en dezelfde dag nog helemaal nieuw gemaakt! Ongelooflijk hoe goedkoop ook vergeleken met Apple zelf.",
+			title: "Heel snel klaar",
+			rating: "5"
+		},
+		{
+			pp: "res/pp4.png",
+			name: "Hicham",
+			desc: "Prachtige nieuwe Macbook Air gekocht voor mijn vriendins verjaardag. Kreeg er zelfs een gratis hoesje bij. Aardige jongen ook, legt je alles uit en helpt je graag.",
+			title: "MacBook gekocht",
+			rating: "5"
+		},
+		{
+			pp: "res/pp5.png",
+			name: "Wilma de Vries",
+			desc: "Hele aardige jongen. Verplaatste al mijn ouwe gegevens over naar me nieuwe telefoon en legde me goed uit hoe alles werkt in elkaar zat!",
+			title: "Goede service",
+			rating: "5"
+		},
+		{
+			pp: "res/pp6.png",
+			name: "Finn Cresswell",
+			desc: "Mijn telefoon was helemaal kapot. Kon dezelfde dag nog een iPhone XR krijgen met een schermprotector en hoesje en al.",
+			title: "Top telefoon weer",
+			rating: "4,5"
+		},
+		{
+			pp: "res/pp7.png",
+			name: "Marije",
+			desc: "Geüpgrade naar een iPhone 11, Snelle verzending en vooral een goedkope prijs, raadt het zeker aan!",
+			title: "Fijn toestel en snelle levering!",
+			rating: "5"
+		},
+		{
+			pp: "res/pp8.png",
+			name: "Miranda Trip",
+			desc: "Goeie service, snelle levering en goed verpakt. Ik koop hier zeker meer in de toekomst :)",
+			title: "Helemaal waard",
+			rating: "5"
+		},
+		{
+			pp: "res/pp9.png",
+			name: "Henk",
+			desc: "Setje Airpods Pro gekocht laatst voor mijn vrouw haar verjaardag!",
+			title: "Prima!",
+			rating: "4,5"
+		},
+		{
+			pp: "res/pp10.jpeg",
+			name: "Martin",
+			desc: "Laatst mijn Macbook ingeruilt voor een nieuwe, hele aardige jongen. En goedkoop ook nog. Ik zal hier zeker terug komen.",
+			title: "Zeer tevreden!!!",
+			rating: "5"
+		},
+		{
+			pp: "res/pp11.png",
+			name: "Brunhilde van Rozen",
+			desc: "Ik heb paar week geleden Airpods 2 gekocht voor me zoons verjaardag, alles werkt en hij was er heel erg blij mee.",
+			title: "Airpods 2 gekocht",
+			rating: "5"
+		},
+		{
+			pp: "res/pp4.png",
+			name: "Anoniem",
+			desc: "Onverstelt hoe goeie kwaliteit en zo goedkoop. Abnormaal",
+			title: "Bizar hoe goed",
+			rating: "5"
+		},
+		{
+			pp: "res/pp13.jpeg",
+			name: "Myrthe",
+			desc: "Zeker aan te raden! Heb het aan al mijn vrienden verteld om hier een nieuwe telefoon te kopen! ;)",
+			title: "Zeker aan te raden :)",
+			rating: "4,5"
+		},
+		{
+			pp: "res/pp4.png",
+			name: "Anoniem",
+			desc: "Schermprotector en hoesje gratis bij mijn telefoon gekregen.",
+			title: "Alles erbij gekregen",
+			rating: "5"
+		},
+		{
+			pp: "res/pp15.jpeg",
+			name: "Jasmine",
+			desc: "Ik haal nooit meer een telefoon ergens anders vandaan. Blijf zeker een vaste klant hier!!!",
+			title: "Helemaal blij mee",
+			rating: "5"
+		},
+		{
+			pp: "res/pp16.jpeg",
+			name: "Marcel Hulzebos",
+			desc: "Toestel nu twee weken in bezit en zeer tevreden na overstap van mijn iPhone 7.",
+			title: "Top verkoper!",
+			rating: "5"
+		}
+	]);
+
+	outp.innerHTML = reviews.map(rev => `<li class="-review splide__slide">
+								<div>
+									<div class="-user">
+										<img src="` + rev.pp + `">
+										<h3>` + rev.name + `</h3>
+									</div>
+									<div class="-msg">
+										<h3>` + rev.title + `</h3>
+										<p>` + rev.desc + `</p>
+										<div class="-stars">
+											<i style="color: var(--orange-one);" class="fas fa-star"></i>
+											<i style="color: var(--orange-one);" class="fas fa-star"></i>
+											<i style="color: var(--orange-one);" class="fas fa-star"></i>
+											<i style="color: var(--orange-one);" class="fas fa-star"></i>
+											<i style="color: var(--orange-one);" class="fas fa-star` + (rev.rating == "4,5" ? "-half-alt" : "") + `"></i>
+										</div>
+									</div>
+								</div>
+							</li>`).join("");
+}
 
 function isInViewport(element) {
 	const rect = element.getBoundingClientRect();

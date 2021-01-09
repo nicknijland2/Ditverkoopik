@@ -462,10 +462,14 @@ header > .-phone > a > img {
 	display: flex;
 	align-items: center;
 	max-width: 500px;
-	margin: 0 auto 2.5em auto;
+	margin: 0 auto;
+	padding: 1.5em 0;
+	margin: 0 auto;
 }
 
 #nsecrev > .-reviews > .splide__track > .splide__list > .-review > div > .-user {
+	text-align: center;
+	max-width: 8em;
 	margin-right: 1em;
 }
 
