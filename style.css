@@ -305,7 +305,7 @@ header > .-phone > a > img {
 
 #nsec4 {
 	position: relative;
-	background: url(res/background7.jpeg);
+	background: url(res/background8.png);
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -619,7 +619,7 @@ h2 {
 	}
 
 	#nsec4 {
-		background-size: calc(100vh);
+		background-size: calc(100vh / 2560 * 2048);
 	}
 
 	#nsec5 {
