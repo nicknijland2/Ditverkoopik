@@ -252,7 +252,7 @@ header > .-phone > a > img {
 #nsec3 > .-covermsg {
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	background: url(res/img13.png);
+	background: url(res/img17.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 45% 50%;
@@ -357,13 +357,22 @@ header > .-phone > a > img {
 
 #nsec5 {
 	position: relative;
-	background: url(res/img14.png), url(res/white.png);
-	background-size: contain, cover;
-	background-repeat: no-repeat, no-repeat;
-	background-position: 0 50%, 50% 50%;
+	background: url(res/background3.jpeg);
+	background-size: cover;
+	background-position: 50% 50%;
 	min-height: 700px;
 	text-align: center;
 	overflow: hidden;
+}
+
+#nsec5 > .-coverbg {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(res/img16.png), url(res/white50.png);
+	background-size: contain, cover;
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0 0, 50% 50%;
+	background-attachment: scroll;
 }
 
 #nsec5 > .-content {
@@ -591,6 +600,10 @@ h2 {
 	#nsec4 > .-extra {
 		bottom: 7em;
 	}
+
+	#nsec5 {
+		background-size: calc(100vh / 865 * 1000);
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -684,7 +697,6 @@ h2 {
 
 	#nsec5 {
 		min-height: 400px;
-		background-position: 0 0, 50% 50%;
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content {

@@ -28,11 +28,13 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 
 	document.addEventListener("scroll", function () {
 		document.querySelector("header > .-phone").style.cssText = (window.pageYOffset < 500 ? "opacity: 0; pointer-events: none;" : "");
-
-		document.querySelector("#nsec2").style.backgroundPositionY = (window.pageYOffset) + "px";
-
 		checkScrollNsec();
 	});
+
+	setInterval(function () {
+		document.querySelector("#nsec2").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec2").offsetTop) + "px";
+		document.querySelector("#nsec5").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec5").offsetTop) + "px";
+	}, 1);
 
 	checkScrollNsec();
 
