@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 
 	setInterval(function () {
 		document.querySelector("#nsec2").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec2").offsetTop) + "px";
+		document.querySelector("#nsec3").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec3").offsetTop) + "px";
+		document.querySelector("#nsec4").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec4").offsetTop) + "px";
 		document.querySelector("#nsec5").style.backgroundPositionY = (window.pageYOffset - document.querySelector("#nsec5").offsetTop) + "px";
 	}, 1);
 
@@ -117,6 +119,13 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 				translateX: [150, 0],
 				skewX: ["10deg", "10deg"],
 				duration: 3000
+			});
+
+			anime({
+				targets: '#nsec5 > .-coverpopetulpulii',
+				rotate: ["-90deg", 0],
+				easing: "easeInOutQuart",
+				duration: 2000
 			});
 		}
 	}

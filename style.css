@@ -243,7 +243,9 @@ header > .-phone > a > img {
 
 #nsec3 {
 	position: relative;
-	background: #fff;
+	background: url(res/background6.jpeg);
+	background-size: cover;
+	background-position: 50% 50%;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -303,7 +305,7 @@ header > .-phone > a > img {
 
 #nsec4 {
 	position: relative;
-	background: url(res/background2.jpeg);
+	background: url(res/background7.jpeg);
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -368,11 +370,22 @@ header > .-phone > a > img {
 #nsec5 > .-coverbg {
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	background: url(res/img16.png), url(res/white50.png);
-	background-size: contain, cover;
-	background-repeat: no-repeat, no-repeat;
-	background-position: 0 0, 50% 50%;
+	background: url(res/white75.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	background-attachment: scroll;
+}
+
+#nsec5 > .-coverpopetulpulii {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(res/img16.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-attachment: scroll;
+	transform-origin: bottom left;
 }
 
 #nsec5 > .-content {
@@ -599,6 +612,14 @@ h2 {
 
 	#nsec4 > .-extra {
 		bottom: 7em;
+	}
+
+	#nsec3 {
+		background-size: calc(100vh);
+	}
+
+	#nsec4 {
+		background-size: calc(100vh);
 	}
 
 	#nsec5 {
