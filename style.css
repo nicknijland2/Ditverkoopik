@@ -713,7 +713,7 @@ h2 {
 	}
 
 	#nsec4 {
-		background-size: calc(50vh / 3500 * 2500), 50% 50%;
+		background-size: calc(60vh / 3500 * 2000), 50% 50%;
 	}
 
 	#nsec4 > .-covermsg {
