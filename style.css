@@ -305,10 +305,10 @@ header > .-phone > a > img {
 
 #nsec4 {
 	position: relative;
-	background: url(res/background8.png);
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	background: url(res/background8.png), url(res/white.png);
+	background-size: cover, cover;
+	background-position: 50% 50%, 50% 50%;
+	background-repeat: no-repeat, repeat;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -713,7 +713,7 @@ h2 {
 	}
 
 	#nsec4 {
-		background-size: calc(100vh / 3300 * 2048);
+		background-size: calc(50vh / 3500 * 2500), 50% 50%;
 	}
 
 	#nsec4 > .-covermsg {
