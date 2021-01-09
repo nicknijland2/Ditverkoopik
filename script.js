@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 		document.querySelector("#nsec2").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec2").offsetTop) / 3) + "px";
 		document.querySelector("#nsec3").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec3").offsetTop) / 3) + "px";
 		document.querySelector("#nsec4").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec4").offsetTop) / 3) + "px";
+		document.querySelector("#nsec4").style.backgroundPositionX = "calc(50% + 50px)";
 		document.querySelector("#nsec5").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec5").offsetTop) / 3) + "px";
 	}, 1);
 
