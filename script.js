@@ -50,14 +50,64 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 			}
 		}
 	}).mount();
-});
 
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
+	anime({
+		targets: '#nsec2 > .-content',
+		translateX: [-150, 0],
+		duration: 3000,
+		skewX: ["-10deg", "-10deg"]
+	});
+
+	anime({
+		targets: '#nsec2 > .-covermsg',
+		translateY: [-150, 0],
+		duration: 3000
+	});
+
+	anime({
+		targets: '#nsec2 > .-phone',
+		translateX: [150, 0],
+		rotate: ["-7deg", "-7deg"],
+		duration: 3000
+	});
+
+	anime({
+		targets: '#nsec3 > .-content',
+		translateX: [150, 0],
+		duration: 3000,
+		skewX: ["10deg", "10deg"]
+	});
+
+	anime({
+		targets: '#nsec3 > .-phone',
+		translateX: [-150, 0],
+		rotate: ["7deg", "7deg"],
+		duration: 3000
+	});
+
+	anime({
+		targets: '#nsec3 > .-covermsg',
+		translateY: [-150, 0],
+		duration: 3000
+	});
+
+	anime({
+		targets: '#nsec4 > .-content',
+		translateX: [-150, 0],
+		duration: 3000,
+		skewX: ["-10deg", "-10deg"]
+	});
+
+	anime({
+		targets: '#nsec4 > .-covermsg',
+		translateY: [-150, 0],
+		duration: 3000
+	});
+
+	anime({
+		targets: '#nsec5 > .-content',
+		translateX: [150, 0],
+		duration: 3000,
+		skewX: ["10deg", "10deg"]
+	});
+});
