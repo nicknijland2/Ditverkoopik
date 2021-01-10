@@ -307,7 +307,7 @@ header > .-phone > a > img {
 
 #nsec4 {
 	position: relative;
-	background: url(res/background8.png), url(res/white.png);
+	background: url(res/background9.png), url(res/white.png);
 	background-size: cover, cover;
 	background-position: 50% 50%, 50% 50%;
 	background-repeat: no-repeat, repeat;
@@ -524,6 +524,17 @@ h2 {
 	margin-right: .5em;
 }
 
+@media screen and (max-width: 9999px) {
+
+	#nsec5 {
+		font-size: 1.4em;
+	}
+
+	#nsec5 > .-content {
+		max-width: calc(450px * 1.4);
+	}
+}
+
 @media screen and (max-width: 1400px) {
 	header > .-laptop {
 		margin-top: 0;
@@ -548,6 +559,14 @@ h2 {
 		pointer-events: all;
 	}
 
+	#nsec2, #nsec3, #nsec4, #nsec5 {
+		font-size: 1em;
+	}
+
+	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
+		max-width: 450px;
+	}
+
 	#nsec2 > .-covermsg {
 		background-position: 70% -100px;
 	}
@@ -558,6 +577,14 @@ h2 {
 
 	#nsec4 > .-covermsg {
 		background-position: 70% -100px;
+	}
+
+	#nsec4 > .-content {
+		max-width: calc(100% - 6em - 20px);
+	}
+
+	#nsec4 {
+		background-image: url(res/background8.png), url(res/white.png);
 	}
 }
 
@@ -572,6 +599,7 @@ h2 {
 
 	#nsec2, #nsec3, #nsec4, #nsec5 {
 		background-attachment: scroll;
+		font-size: 1em;
 	}
 }
 
