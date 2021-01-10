@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function () { //Everything in this
 	});
 
 	setInterval(function () {
-		document.querySelector("#nsec2").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec2").offsetTop) / 3) + "px";
-		document.querySelector("#nsec3").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec3").offsetTop) / 3) + "px";
-		document.querySelector("#nsec4").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec4").offsetTop) / 3) + "px";
+		document.querySelector("#nsec2").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec2").offsetTop) / 3 + (window.innerWidth >= 500 ? 0 * window.innerHeight / 2 : 0)) + "px";
+		document.querySelector("#nsec3").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec3").offsetTop) / 3 + (window.innerWidth >= 500 ? 0 * window.innerHeight / 2 : 0)) + "px";
+		document.querySelector("#nsec4").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec4").offsetTop) / 3 + (window.innerWidth >= 500 ? 0 * window.innerHeight / 2 : 0)) + "px";
 		document.querySelector("#nsec4").style.backgroundPositionX = "calc(50% + 75px)";
-		document.querySelector("#nsec5").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec5").offsetTop) / 3) + "px";
+		document.querySelector("#nsec5").style.backgroundPositionY = ((window.pageYOffset - document.querySelector("#nsec5").offsetTop) / 3 + (window.innerWidth >= 500 ? 0 * window.innerHeight / 2 : 0)) + "px";
 	}, 1);
 
 	checkScrollNsec();
@@ -188,7 +188,7 @@ function generateReviews(outp) {
 		{
 			pp: "res/pp5.png",
 			name: "Wilma",
-			desc: "Hele aardige jongen. Verplaatste al mijn ouwe gegevens over naar me nieuwe telefoon en legde me goed uit hoe alles werkt in elkaar zat!",
+			desc: "Hele aardige jongen. Verplaatste al mijn ouwe gegeven over naar mijn nieuwe telefoon en legde me goed uit hoe alles werkt.",
 			title: "Goede service",
 			rating: "5"
 		},
@@ -202,14 +202,14 @@ function generateReviews(outp) {
 		{
 			pp: "res/pp7.png",
 			name: "Marije",
-			desc: "Geüpgrade naar een iPhone 11, Snelle verzending en vooral een goedkope prijs, raadt het zeker aan!",
+			desc: "Geüpgraded naar een iPhone 11, Snelle verzending en vooral een goedkope prijs, raadt het zeker aan!",
 			title: "Fijn toestel en snelle levering!",
 			rating: "5"
 		},
 		{
 			pp: "res/pp8.png",
 			name: "Miranda",
-			desc: "Goeie service, snelle levering en goed verpakt. Ik koop hier zeker meer in de toekomst :)",
+			desc: "Goede service, snelle levering en goed verpakt. Ik koop hier zeker meer in de toekomst :)",
 			title: "Helemaal waard",
 			rating: "5"
 		},
@@ -230,15 +230,15 @@ function generateReviews(outp) {
 		{
 			pp: "res/pp11.png",
 			name: "Brunhilde",
-			desc: "Ik heb paar week geleden Airpods 2 gekocht voor me zoons verjaardag, alles werkt en hij was er heel erg blij mee.",
+			desc: "I heb paar weken geleden Airpods2 gekocht voor de verjaardag van mijn zoon. Hij was er heel erg blij mee!",
 			title: "Airpods 2 gekocht",
 			rating: "5"
 		},
 		{
 			pp: "res/pp4.png",
 			name: "Anoniem",
-			desc: "Onverstelt hoe goeie kwaliteit en zo goedkoop. Abnormaal",
-			title: "Bizar hoe goed",
+			desc: "Goeie kwaliteit en goedkoop.",
+			title: "Prima",
 			rating: "5"
 		},
 		{
