@@ -202,7 +202,7 @@ function generateReviews(outp) {
 		{
 			pp: "res/pp7.png",
 			name: "Marije",
-			desc: "Geüpgraded naar een iPhone 11, Snelle verzending en vooral een goedkope prijs, raadt het zeker aan!",
+			desc: "Geüpgraded naar een iPhone 11, Snelle verzending en vooral een goedkope prijs, raad het zeker aan!",
 			title: "Fijn toestel en snelle levering!",
 			rating: "5"
 		},
@@ -230,7 +230,7 @@ function generateReviews(outp) {
 		{
 			pp: "res/pp11.png",
 			name: "Brunhilde",
-			desc: "I heb paar weken geleden Airpods2 gekocht voor de verjaardag van mijn zoon. Hij was er heel erg blij mee!",
+			desc: "Ik heb paar weken geleden Airpods2 gekocht voor de verjaardag van mijn zoon. Hij was er heel erg blij mee!",
 			title: "Airpods 2 gekocht",
 			rating: "5"
 		},
