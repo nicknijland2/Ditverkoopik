@@ -178,6 +178,7 @@ header > .-phone > a > img {
 	text-align: center;
 	overflow: hidden;
 	background: url(res/background4-1.png);
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: 50% 50%;
 }
@@ -246,6 +247,7 @@ header > .-phone > a > img {
 	background: url(res/background6.jpeg);
 	background-size: cover;
 	background-position: 50% 50%;
+	background-attachment: fixed;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -309,6 +311,7 @@ header > .-phone > a > img {
 	background-size: cover, cover;
 	background-position: 50% 50%, 50% 50%;
 	background-repeat: no-repeat, repeat;
+	background-attachment: fixed;
 	min-height: 500px;
 	text-align: center;
 	overflow: hidden;
@@ -565,6 +568,10 @@ h2 {
 
 	#nsec3 > .-phone {
 		left: calc(50% - 27em);
+	}
+
+	#nsec2, #nsec3, #nsec4, #nsec5 {
+		background-attachment: scroll;
 	}
 }
 
