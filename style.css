@@ -592,7 +592,7 @@ h2 {
 	}
 
 	#nsec3 > .-covermsg {
-		background-position: 35% -100px;
+		background-position: 35% -115px;
 	}
 
 	#nsec2 > .-content, #nsec3 > .-content, #nsec4 > .-content, #nsec5 > .-content {
@@ -633,7 +633,7 @@ h2 {
 	}
 
 	#nsec3 > .-covermsg {
-		background-position: 35% -50px;
+		background-position: 35% -65px;
 	}
 }
 
@@ -763,7 +763,7 @@ h2 {
 	}
 
 	#nsec3 > .-covermsg {
-		background-position: 70% 25px;
+		background-position: 70% 0;
 	}
 }
 
