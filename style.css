@@ -108,6 +108,7 @@ header > .-phone > a > img {
 	background-position: 50% 50%;
 	min-height: 500px;
 	text-align: center;
+	margin-top:4%;
 }
 
 #nsec1 > .-cover {
@@ -853,4 +854,12 @@ h2 {
 		margin-left: .5em;
 		bottom: 14.5em;
 	}
+}
+
+.trustpilot-widget {
+	float:right;
+	margin:2%;
+}
+.trustpilot-widget > .-laptop {
+	
 }
