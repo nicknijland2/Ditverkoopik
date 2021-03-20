@@ -858,6 +858,7 @@ h2 {
 
 .trustpilot-widget {
 	float:right;
-	margin-left:2%;
+	/* margin-left:2%; */
 	margin-top:2%;
+	box-sizing: content-box;
 }
