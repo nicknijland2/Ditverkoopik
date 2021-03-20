@@ -860,5 +860,5 @@ h2 {
 	float:right;
 	/* margin-left:2%; */
 	margin-top:2%;
-	box-sizing:initial;
+	box-sizing:inherit;
 }
