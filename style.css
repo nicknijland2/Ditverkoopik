@@ -858,8 +858,6 @@ h2 {
 
 .trustpilot-widget {
 	float:right;
-	margin:2%;
-}
-.trustpilot-widget > .-laptop {
-	
+	/* margin:0.5%; */
+	margin-top:1%;
 }
